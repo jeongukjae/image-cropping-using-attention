@@ -118,7 +118,7 @@ def _get_preprocessor():
 
 
 def _plot_and_save(img, attention, scores, center_cropped, score_cropped):
-    fig = plt.figure(figsize=[25, 10], frameon=False)
+    fig = plt.figure(figsize=[25, 10])
 
     ax = fig.add_subplot(1, 5, 1)
     ax.imshow(img)
@@ -140,7 +140,7 @@ def _plot_and_save(img, attention, scores, center_cropped, score_cropped):
     ax.imshow(score_cropped)
     ax.set_title("cropped using attention")
 
-    fig.savefig(f"{FLAGS.output}")
+    fig.savefig(f"{FLAGS.output}", facecolor='white', transparent=False)
 
 
 if __name__ == "__main__":
