@@ -12,7 +12,7 @@ flags.DEFINE_integer("image_size", 480, help="input image size")
 flags.DEFINE_string("model", "dino_vits", help="model name")
 flags.DEFINE_integer("patch_size", 16, help="dino patch size")
 
-flags.DEFINE_float("threshold", 0.3, help="threhsold (pass 0 to disable)")
+flags.DEFINE_float("threshold", 0, help="threhsold (set 0 to disable)")
 flags.DEFINE_string("output", "output.png", help="Image output path")
 flags.DEFINE_integer("sum_span", 30, "sum span")
 flags.DEFINE_integer("output_width", 480, "output image size")
