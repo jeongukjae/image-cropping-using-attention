@@ -130,7 +130,7 @@ def _plot_and_save(img, attention, scores, center_cropped, score_cropped):
 
     ax = fig.add_subplot(1, 5, 3)
     ax.imshow(scores)
-    ax.set_title("scores for croppping")
+    ax.set_title("scores for cropping")
 
     ax = fig.add_subplot(1, 5, 4)
     ax.imshow(center_cropped)
